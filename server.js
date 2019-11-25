@@ -20,8 +20,8 @@ var upload = multer({
     }
 })
 // to connectio with database
-//mongoose.connect("mongodb://127.0.0.1:27017/local", { useNewUrlParser: true })
-mongoose.connect("mongodb+srv://cyb:cyb@image-uploads-ip8qh.mongodb.net/test?retryWrites=true&w=majority", { useUnifiedTopology: true })
+//mongoose.connect("mongodb://127.0.0.1:27017/local", { useNewUrlParser: true }) useUnifiedTopology: true
+mongoose.connect("mongodb+srv://cyb:cyb@image-uploads-ip8qh.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true })
 // here data is parsed with body parser module
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
